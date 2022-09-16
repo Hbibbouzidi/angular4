@@ -1,0 +1,17 @@
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    //background-color: red;
+  }
+  input {
+    $mat-spinner-width: 25px;
+    border: none;
+    width: calc(100% - #{$mat-spinner-width});
+    outline: none;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    height: 100%;
+  }
+  

@@ -1,0 +1,12 @@
+<div class="flex-container">
+    <input
+      #input
+      id="input"
+      [placeholder]="searchPlaceHolder"
+      autocomplete="off"
+      (input)="filterList($event)"
+      (keydown)="stopCharPropagation($event)">
+      <mat-spinner *ngIf="isLoading" [diameter]="25"></mat-spinner>
+  </div>
+  <mat-divider></mat-divider>
+  
